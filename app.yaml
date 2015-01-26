@@ -1,0 +1,34 @@
+application: iceskirun
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /
+  script: iceman.application
+
+- url: /desktop
+  script: iceman.application
+
+- url: /mobile
+  script: iceman.application
+
+- url: /js
+  static_dir: js
+
+- url: /css
+  static_dir: css
+
+- url: /components
+  static_dir: components 
+
+- url: /images
+  static_dir: images
+
+libraries: 
+- name: jinja2
+  version: latest
+
+
+

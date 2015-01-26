@@ -1,0 +1,166 @@
+<!---base html-->
+<html>
+	<head>
+        <meta name="viewport" 
+  content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+        <script src="../components/webcomponentsjs/webcomponents.js"></script>
+        
+        <link rel="import" href="../components/font-roboto/roboto.html">
+        <link rel="import" href="../components/core-header-panel/core-header-panel.html">
+        <link rel="import" href="../components/core-toolbar/core-toolbar.html">
+        <link rel="import" href="../components/paper-tabs/paper-tabs.html">
+        <link rel="import" href="../components/paper-icon-button/paper-icon-button.html">
+        <link rel="import" href="../components/paper-button/paper-button.html">
+        <link rel="import" href="../components/core-icon/core-icon.html">
+        <link rel="import" href="../components/paper-fab/paper-fab.html">
+        
+        <link rel="stylesheet" type="text/css" href="../css/front.css">
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        
+	</head>
+	<body unresolved>
+        <core-toolbar class="navbar-fixed-top">
+            <paper-tabs link class="bottom fit" flex link>
+                <paper-tab >GETTING STARTED</paper-tab>
+                <paper-tab><a horizontal center-center layout href="#technologies-used">TECHNOLOGY</a></paper-tab>
+            </paper-tabs>
+        </core-toolbar>
+
+        <div class="container" id="main-row">
+            <div class="row" id="violet-row">
+                <div class="col-lg-6 col-md-6">
+                    <img src=/images/sample.jpg>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <article>
+                    <h1 class="article-header">Ice-skirun</h1>
+                    <p>
+                        Ice-ski-run is a game built using Html5 Canvas,Javascript.<br>
+                    </p>
+                    <paper-button raised style="background: #4CAF50;"><h4>LET'S PLAY</h4></paper-button>
+                </article>     
+                </div>
+            </div>
+        <div class="clearfix visible-md-block"></div>
+        </div>
+      
+       <div class="container" id="technologies-used">
+       <section>
+           <h2>Technology</h2>
+           <div class="row">
+               <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                   <article>
+                       <h1>
+                           HTML5 Canvas
+                       </h1>
+                       <p>
+                           A canvas for game developers to show their talent.   
+                           <br><paper-button>Read More<core-icon icon="chevron-right"></core-icon></paper-button>
+                       </p>
+                   </article>
+               </div>
+               <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                   <article>
+                       <h1>
+                           Google App Engine
+                       </h1>
+                       <p>
+                           The sophisticated platform which makes deployment easy.
+                           <br><paper-button>Read More<core-icon icon="chevron-right"></core-icon></paper-button>
+                       </p>
+                   </article>
+               </div>
+               <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                   <article>
+                       <h1>
+                           WebRTC
+                       </h1>
+                       <p>
+                           A protocol which allows web applications to talk with each other.<br>
+                           <paper-button>Read More<core-icon icon="chevron-right"></core-icon></paper-button>
+                       </p>
+                   </article>
+               </div>
+           </div>
+           <div class="clearfix visible-md-block"></div>
+               <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                   <article>
+                       <h1>
+                           Accelerometer API
+                       </h1>
+                       <p>
+                           Control the motion of the game with mobile accelerometers.
+                           <br><paper-button>Read More<core-icon icon="chevron-right"></core-icon></paper-button>
+                       </p>
+                   </article>
+                </div>
+               <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                   <article>
+                       <h1>
+                          Vibration API
+                       </h1>
+                       <p>
+                           Dont just play the game.Feel it through the vibrations.
+                           <br><paper-button>Read More<core-icon icon="chevron-right"></core-icon></paper-button>
+                       </p>
+                   </article>
+               </div>
+               <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                   <article>
+                       <h1>
+                           Google Chrome
+                       </h1>
+                       <p>
+                           A popular browser and platform especially for game developers.
+                           <br><paper-button>Read More<core-icon icon="chevron-right"></core-icon></paper-button>
+                       </p>
+                   </article>
+               </div>
+               </div>
+       </section>
+        </div>
+        <div>
+            <paper-fab class="scrollToTop" icon="expand-less" title="back_to_top"></paper-fab></a>
+        </div>
+	</body>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script>
+    
+     $(document).ready(function(){
+	
+	//Check to see if the window is top if not then display button
+	$(window).scroll(function(){
+		if ($(this).scrollTop() >100) {
+			$('.scrollToTop').fadeIn();
+		} else {
+			$('.scrollToTop').fadeOut();
+		}
+	});
+	
+	//Click event to scroll to top
+	$('.scrollToTop').click(function(){
+		$('html, body').animate({scrollTop : 0},800);
+		return false;
+	});
+	
+});
+        function scrollToElement (selector) {
+  $('html, body').animate({
+    scrollTop: $(selector).offset().top
+  }, 900);    
+};
+        $(document).ready(function(){
+	$('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash;
+	    var $target = $(target);
+        scrollToElement(target);
+	});
+});
+    </script>
+</html>
+
