@@ -21,7 +21,7 @@
 	<body unresolved>
         <core-toolbar class="navbar-fixed-top">
             <paper-tabs link class="bottom fit" flex link>
-                <paper-tab >GETTING STARTED</paper-tab>
+                <paper-tab ><a horizontal center-center layout href="#getting-started">GETTING STARTED</a></paper-tab>
                 <paper-tab><a horizontal center-center layout href="#technologies-used">TECHNOLOGY</a></paper-tab>
             </paper-tabs>
         </core-toolbar>
@@ -29,19 +29,95 @@
         <div class="container" id="main-row">
             <div class="row" id="violet-row">
                 <div class="col-lg-6 col-md-6">
-                    <img src=/images/sample.jpg>
+                    <img src="/images/front_pic.jpg">
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <article>
-                    <h1 class="article-header">Ice-skirun</h1>
+                    <h1 class="article-header">Iceskirun</h1>
                     <p>
                         Ice-ski-run is a game built using Html5 Canvas,Javascript.<br>
                     </p>
-                    <paper-button raised style="background: #4CAF50;"><h4>LET'S PLAY</h4></paper-button>
+                    <a href="https://webrtctestexp.appspot.com/"><paper-button raised style="background: #4CAF50;"><h4>LET'S PLAY</h4></paper-button></a>
                 </article>     
                 </div>
             </div>
         <div class="clearfix visible-md-block"></div>
+        </div>
+
+        <div class="container" id="getting-started">
+       <section>
+           <h2>Getting Started</h2>
+           <div class="row" class="black-row">
+                <div class="col-lg-6 col-md-6">
+                    <img src="/images/Step1.jpg">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <article>
+                    <h1 class="step-header">Step 1</h1>
+                    <p class="step-desc">
+                        Visit the url <b>iceskirun.appspot.com</b> from both the devices(laptop/desktop and mobile) and click on Let's Play button.<br>
+                    </p>
+                </article>     
+                </div>
+             
+           </div>
+           <div class="clearfix visible-md-block"></div>
+           <div class="row" class="black-row">
+                <div class="col-lg-6 col-md-6">
+                    <img src="/images/Step2.png">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <article>
+                    <h1 class="step-header">Step 2</h1>
+                    <p class="step-desc">
+                        From your desktop click on "Generate Room" button to generate four digit room number and then press "Create Room" to create room for your devices on the server.
+                    </p>
+                </article>     
+                </div>
+
+             
+           </div>
+            <div class="row" class="black-row">
+                <div class="col-lg-6 col-md-6">
+                    <img src="/images/Step3.png">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <article>
+                    <h1 class="step-header">Step 3</h1>
+                    <p class="step-desc">
+                        Now enter the same room number on your mobile device's text box and click on "Join room".Then wait for two devices to connect.
+                    </p>
+                </article>     
+                </div>             
+           </div>
+           <div class="row" class="black-row">
+                <div class="col-lg-6 col-md-6">
+                    <img src="/images/Step4.png">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <article>
+                    <h1 class="step-header">Step 4</h1>
+                    <p class="step-desc">
+                        As soon as the connection is established desktop page will show the "Let's Play" button.Click on that to kick off things.
+                    </p>
+                </article>     
+                </div>             
+           </div>
+           <div class="row" class="black-row">
+                <div class="col-lg-6 col-md-6">
+                    <img src="/images/Step5.jpg">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <article>
+                    <h1 class="step-header">Play the game</h1>
+                    <p class="step-desc">
+                        Now Desktop/laptop will display the game arena and mobile device will display the game controller UI.
+                        Hold the mobile device in the landscape orientation and control the movement of the game character using the accelerometer of your mobile device.
+                    </p>
+                </article>     
+                </div>             
+           </div>
+       </section>
         </div>
       
        <div class="container" id="technologies-used">
@@ -51,11 +127,11 @@
                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                    <article>
                        <h1>
-                           HTML5 Canvas
+                           WebGL
                        </h1>
                        <p>
-                           A canvas for game developers to show their talent.   
-                           <br><paper-button>Read More<core-icon icon="chevron-right"></core-icon></paper-button>
+                           Web version of the famous graphic library OpenGL.   
+                           <br><a href="https://get.webgl.org/" target="new"><paper-button>Read More<core-icon icon="chevron-right"></core-icon></paper-button></a>
                        </p>
                    </article>
                </div>
@@ -66,7 +142,7 @@
                        </h1>
                        <p>
                            The sophisticated platform which makes deployment easy.
-                           <br><paper-button>Read More<core-icon icon="chevron-right"></core-icon></paper-button>
+                           <br><a href="https://cloud.google.com/appengine/docs" target="new"><paper-button>Read More<core-icon icon="chevron-right"></core-icon></paper-button></a>
                        </p>
                    </article>
                </div>
@@ -77,7 +153,7 @@
                        </h1>
                        <p>
                            A protocol which allows web applications to talk with each other.<br>
-                           <paper-button>Read More<core-icon icon="chevron-right"></core-icon></paper-button>
+                           <a href="http://www.webrtc.org/"  target="new"><paper-button>Read More<core-icon icon="chevron-right"></core-icon></paper-button></a>
                        </p>
                    </article>
                </div>
@@ -91,7 +167,7 @@
                        </h1>
                        <p>
                            Control the motion of the game with mobile accelerometers.
-                           <br><paper-button>Read More<core-icon icon="chevron-right"></core-icon></paper-button>
+                           <br><a href="http://www.html5rocks.com/en/tutorials/device/orientation/" target="new"><paper-button>Read More<core-icon icon="chevron-right"></core-icon></paper-button></a>
                        </p>
                    </article>
                 </div>
@@ -101,8 +177,8 @@
                           Vibration API
                        </h1>
                        <p>
-                           Dont just play the game.Feel it through the vibrations.
-                           <br><paper-button>Read More<core-icon icon="chevron-right"></core-icon></paper-button>
+                           Don't just play the game.Feel it through the vibrations.
+                           <br><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/API/Vibration" target="new"><paper-button>Read More<core-icon icon="chevron-right"></core-icon></paper-button></a>
                        </p>
                    </article>
                </div>
@@ -113,7 +189,7 @@
                        </h1>
                        <p>
                            A popular browser and platform especially for game developers.
-                           <br><paper-button>Read More<core-icon icon="chevron-right"></core-icon></paper-button>
+                           <br><a href="http://www.google.com/chrome/" target="new"><paper-button>Read More<core-icon icon="chevron-right" target="new"></core-icon></paper-button></a>
                        </p>
                    </article>
                </div>

@@ -19,7 +19,7 @@ core-header-panel
     box-shadow:0px 5px 5px #888888;
   }
 
-.
+
 paper-tabs
 {
     padding: 0;
@@ -68,6 +68,17 @@ article
     padding-bottom:50px; 
 }
 
+article a
+{   
+  color:#FFFFFF; 
+}
+
+article a:hover
+{   
+  color:#FFFFFF; 
+}
+
+
 .article-header
 {
   font-family: 'RobotoDraft',sans-serif;
@@ -84,7 +95,7 @@ article
 {
 }
 
-#technologies-used
+#technologies-used,#getting-started
 {
     background:#263238!important;
     margin-top: 50px;
@@ -92,7 +103,7 @@ article
     padding-bottom: 50px;
 }
 
-#technologies-used section h2
+#technologies-used section h2,#getting-started section h2
 {
     margin-top: 10px;
     font-family: 'RobotoDraft',sans-serif; 
@@ -170,4 +181,26 @@ paper-fab
   bottom:50px;
   right: 10px;
   display: none;
+}
+
+.step-desc
+{
+  text-align: left !important;
+  font-size: 1.7em;
+  font-weight: 100;
+}
+
+.step-header
+{
+  font-weight:300 !important; 
+  font-family: 'RobotoDraft',sans-serif !important;
+  font-size: 3em;
+}
+
+#getting-started section .row
+{
+  padding-bottom: 5px;
+  border-bottom-style: dashed;
+  border-bottom-width: 1px;
+  border-bottom-color:#FFFFFF; 
 }
